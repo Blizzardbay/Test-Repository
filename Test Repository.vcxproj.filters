@@ -19,4 +19,14 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="game\linker_files\PWProject.csv" />
+    <None Include="game\linker_files\Scenes.csv" />
+    <None Include="game\data\Example.csv" />
+    <None Include="game\data\Example_Data.csv" />
+    <None Include="game\data\Example_Input.csv" />
+    <None Include="game\data\Example_Event.csv" />
+    <None Include="game\linker_files\Fonts.csv" />
+    <None Include="game\data\Data.csv" />
+  </ItemGroup>
 </Project>

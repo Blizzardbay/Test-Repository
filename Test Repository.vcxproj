@@ -28,28 +28,28 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -74,6 +74,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <EnableMicrosoftCodeAnalysis>false</EnableMicrosoftCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -87,6 +88,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(Solution)dependencies\graphics_win64\glew-2.1.0\include;$(Solution)dependencies\audio_win64\freealut-master\include;$(Solution)dependencies\audio_win64\OpenAL\include;$(Solution)dependencies\data_structures_win64\Quadtree-master\include;$(Solution)dependencies\graphics_win64\FreeImage\Dist\x64;$(Solution)dependencies\graphics_win64\freetype-2.10.4\include;$(Solution)dependencies\graphics_win64\glfw-3.3.3.bin.WIN64\include;$(Solution)dependencies\graphics_win64\glm\glm;$(Solution)dependencies\parser_win64\fast-cpp-csv-parser-master</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -97,12 +100,16 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(Solution)dependencies\engine_win64\Pistonworks Engine\engine_files\engine_headers;$(Solution)dependencies\engine_win64\Pistonworks Engine\dependencies\graphics_win64\glew-2.1.0\include;$(Solution)dependencies\engine_win64\Pistonworks Engine\dependencies\audio_win64\freealut-master\include;$(Solution)dependencies\engine_win64\Pistonworks Engine\dependencies\audio_win64\OpenAL\include;$(Solution)dependencies\engine_win64\Pistonworks Engine\dependencies\data_structures_win64\Quadtree-master\include;$(Solution)dependencies\engine_win64\Pistonworks Engine\dependencies\graphics_win64\FreeImage\Dist\x64;$(Solution)dependencies\engine_win64\Pistonworks Engine\dependencies\graphics_win64\freetype-2.10.4\include;$(Solution)dependencies\engine_win64\Pistonworks Engine\dependencies\graphics_win64\glfw-3.3.3.bin.WIN64\include;$(Solution)dependencies\engine_win64\Pistonworks Engine\dependencies\graphics_win64\glm\glm;$(Solution)dependencies\engine_win64\Pistonworks Engine\dependencies\parser_win64\fast-cpp-csv-parser-master;$(Solution)dependencies\engine_win64\Pistonworks Engine\config;$(Solution)dependencies\engine_win64\Pistonworks Engine\dependencies\physics_win64\box2d-main\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(Solution)dependencies\engine_win64\Pistonworks Engine\x64\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Pistonworks Engine.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -113,6 +120,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(Solution)dependencies\graphics_win64\glew-2.1.0\include;$(Solution)dependencies\audio_win64\freealut-master\include;$(Solution)dependencies\audio_win64\OpenAL\include;$(Solution)dependencies\data_structures_win64\Quadtree-master\include;$(Solution)dependencies\graphics_win64\FreeImage\Dist\x64;$(Solution)dependencies\graphics_win64\freetype-2.10.4\include;$(Solution)dependencies\graphics_win64\glfw-3.3.3.bin.WIN64\include;$(Solution)dependencies\graphics_win64\glm\glm;$(Solution)dependencies\parser_win64\fast-cpp-csv-parser-master</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -127,18 +136,32 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_CRT_SECURE_NO_WARNINGS;_SILENCE_ALL_CXX17_DEPRECATION_WARNINGS;FT2_BUILD_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(Solution)dependencies\engine_win64\Pistonworks Engine\dependencies\graphics_win64\glew-2.1.0\include;$(Solution)dependencies\engine_win64\Pistonworks Engine\dependencies\audio_win64\freealut-master\include;$(Solution)dependencies\engine_win64\Pistonworks Engine\dependencies\audio_win64\OpenAL\include;$(Solution)dependencies\engine_win64\Pistonworks Engine\dependencies\data_structures_win64\Quadtree-master\include;$(Solution)dependencies\engine_win64\Pistonworks Engine\dependencies\graphics_win64\FreeImage\Dist\x64;$(Solution)dependencies\engine_win64\Pistonworks Engine\dependencies\graphics_win64\freetype-2.10.4\include;$(Solution)dependencies\engine_win64\Pistonworks Engine\dependencies\graphics_win64\glfw-3.3.3.bin.WIN64\include;$(Solution)dependencies\engine_win64\Pistonworks Engine\dependencies\graphics_win64\glm\glm;$(Solution)dependencies\engine_win64\Pistonworks Engine\dependencies\parser_win64\fast-cpp-csv-parser-master;$(Solution)dependencies\engine_win64\Pistonworks Engine\dependencies\physics_win64\box2d-main\include;$(Solution)dependencies\engine_win64\Pistonworks Engine\engine_files\engine_headers;$(Solution)dependencies\engine_win64\Pistonworks Engine\config</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(Solution)dependencies\engine_win64\Pistonworks Engine\x64\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Pistonworks Engine.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="game\data\Data.csv" />
+    <None Include="game\data\Example.csv" />
+    <None Include="game\data\Example_Data.csv" />
+    <None Include="game\data\Example_Event.csv" />
+    <None Include="game\data\Example_Input.csv" />
+    <None Include="game\linker_files\Fonts.csv" />
+    <None Include="game\linker_files\PWProject.csv" />
+    <None Include="game\linker_files\Scenes.csv" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

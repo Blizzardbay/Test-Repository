@@ -1,0 +1,20 @@
+|13:08:50|COUTMSG|---------------------------------------------------------
+|13:08:50|ENGINE |Console| Load ( Completed )
+|13:08:50|COUTMSG|---------------------------------------------------------
+|13:08:50|SUCCESS|GLFW| Function Success ( Completed )
+|13:08:50|COUTMSG|---------------------------------------------------------
+|13:08:50|ENGINE |Settings| Load Settings ( Completed )
+|13:08:50|COUTMSG|---------------------------------------------------------
+|13:08:50|SUCCESS|GLFW| Window Creation ( Completed )
+|13:08:50|COUTMSG|---------------------------------------------------------
+|13:08:50|ENGINE |Settings| Display Creation  ( Completed )
+|13:08:50|COUTMSG|---------------------------------------------------------
+|13:08:50|SUCCESS|GL| Function Success ( Completed )
+|13:08:50|COUTMSG|---------------------------------------------------------
+|13:08:50|ENGINE |GLEW Version| 3.3.3 Win32 WGL EGL OSMesa VisualC DLL
+|13:08:50|COUTMSG|---------------------------------------------------------
+|13:08:50|SUCCESS|GL| Function Success ( Completed )
+|13:08:50|SUCCESS|GL| Function Success ( Completed )
+|13:08:50|SUCCESS|GL| Function Success ( Completed )
+|13:08:50|SUCCESS|GL| Function Success ( Completed )
+|13:08:50|SUCCESS|GL| Function Success ( Completed )
