@@ -334,7 +334,7 @@ PW_NAMESPACE_SRT
 								Engine_Queue::Current_Scene()->Input()->Poll_Active_Events();
 							}
 							// Engine Frame / Shader
-							PW_GL_VOID_CALL(glClearColor(0.0f, 0.0f, 0.0f, 1.0f), false);
+							PW_GL_VOID_CALL(glClearColor(1.0f, 1.0f, 1.0f, 1.0f), false);
 							PW_GL_VOID_CALL(glClear(GL_COLOR_BUFFER_BIT), false);
 							// Update Model Information After An Event
 							Engine_Queue::Pre_Queue();
