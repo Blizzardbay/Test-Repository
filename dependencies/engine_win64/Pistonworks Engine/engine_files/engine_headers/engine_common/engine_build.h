@@ -46,7 +46,7 @@
 
 // Enable Debug Features
 #ifdef _DEBUG
-	#ifndef NDEBUG
+	#ifndef NDEBUG  
 		#define PW_DEBUG_MODE
 	#else 
 		#undef _DEBUG
